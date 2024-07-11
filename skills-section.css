@@ -5,6 +5,7 @@
   /* background-color: pink; */
   max-width: 1300px;
   margin: 0px auto;
+  padding: 0px 50px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -25,10 +26,10 @@
 .skills-section .container .skills-description{
   color: #d7d7d7;
   text-align: center;
-  margin: 0px 0px 25px 0px;
+  margin: 0px 0px 50px 0px;
 }
 .skills-section .container .skills-container{
-  max-width: 870px;
+  max-width: 1200px;
   padding: 50px;
   border-radius: 1.25rem;
 
@@ -37,7 +38,7 @@
 
   background-image: url('./html.svg');
   background-repeat: no-repeat;
-  background-size: 20%;
+  background-size: 15%;
   transition: 0.5s ease;
 
 }
@@ -70,6 +71,10 @@
   align-items: center;
   justify-content: center;
   cursor: pointer;
+}
+.skills-section .container .skills-container .tools-container .skill:hover{
+  transform: scale(1.05);
+  transition: all 0.2s ease
 }
 .skills-section .container .skills-container .tools-container .skill .skill-image{
   background-color: #ebe9e9

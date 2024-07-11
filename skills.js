@@ -54,28 +54,28 @@ skillList.forEach((eachSkill)=>{
 
 let imageIndex = 1;
 let interval = setInterval(()=>{
-  console.log(imageIndex);
+  // console.log(imageIndex);
 
   if(imageIndex == images.length) { imageIndex = 0;}
 
   if(images[imageIndex].position == 'top left' ){
     skillContainer.style.backgroundPosition = 'top left'
-    skillContainer.style.backgroundSize = '20%'
+    skillContainer.style.backgroundSize = '15%'
   }
   else if (images[imageIndex].position == 'top right' )
   {
     skillContainer.style.backgroundPosition = 'top right'
-        skillContainer.style.backgroundSize = '20%'
+        skillContainer.style.backgroundSize = '15%'
   }
   else if (images[imageIndex].position == 'bottom right' )
   {
     skillContainer.style.backgroundPosition = 'bottom right'
-        skillContainer.style.backgroundSize = '20%'
+        skillContainer.style.backgroundSize = '15%'
   }
   else
   {
     skillContainer.style.backgroundPosition = 'bottom left'
-        skillContainer.style.backgroundSize = '20%'
+        skillContainer.style.backgroundSize = '15%'
   }
   skillContainer.style.backgroundImage = `url(${images[imageIndex].imageURL})`;
   imageIndex++

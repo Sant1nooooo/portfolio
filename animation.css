@@ -1,0 +1,56 @@
+.hiddenPersonalAnimation{
+  opacity: 0.5;
+  transition: all 0.7s;
+  filter: blur(5px);
+  transform: translateX(-100px);
+
+}
+.personalAnimation{
+  opacity: 1;
+  filter: blur(0px);
+  transform: translateX(0);
+}
+.hiddenImage{
+  opacity: 0.5;
+  transition: all 0.7s;
+  filter: blur(10px);
+}
+.animationImage{
+  opacity: 1;
+  filter: blur(0px);
+}
+
+.hiddenSkillsDivider{
+  opacity: 0.5;
+  transition: all 0.7s;
+  filter: blur(5px);
+  transform: translateX(100px);
+}
+.animationSkillsDivider{
+  opacity: 1;
+  filter: blur(0px);
+  transform: translateX(0);
+}
+
+.hiddenSkillsDescription{
+  opacity: 0.5;
+  transition: all 0.7s;
+  filter: blur(5px);
+}
+.animationSkillsDescription{
+  opacity: 1;
+  filter: blur(0px);
+}
+.hiddenSkillsContainer
+{
+  opacity: 0.5;
+  filter: blur(5px);
+  transition: all 0.7s ease-out;
+  transform: translateZ(100px) scale(0.5);
+}
+.animationSkillsContainer
+{
+  opacity: 1;
+  filter: blur(0px);
+  transform: translateZ(0px) scale(1);
+}

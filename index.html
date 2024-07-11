@@ -6,18 +6,23 @@
     <link rel="stylesheet" href="intro-section.css">
     <link rel="stylesheet" href="./personal-details.css">
     <link rel="stylesheet" href="./skills-section.css">
+    <link rel="stylesheet" href="./animation.css">
+    <link rel="stylesheet" href="./projects-section.css">
+    <link rel="stylesheet" href="./intro-animation.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
     <title>Jerome Esguerra Bercero</title>
     <script src="./index.js"></script>
     <!-- <script src="./projects.js"></script> -->
   </head>
   <body>
     <div class="site-wrapper">
+      <!-- Header Section -->
       <div class="intro-section">
         <div class="container">
           <div class="top">
             <div class="left">
-              <div class="quote">
+              <div class="quote hiddenQuoteContainer">
                 <p class="never-give-up">Never give up on something you really want to get.</p>
                 <div class="download-cv">
                   <div class="document-icon">
@@ -27,18 +32,18 @@
                 </div>
               </div>
               <div class="service">
-                <p class="title">What I can offer?</p>
+                <p class="title hiddenServiceTitle">What I can offer?</p>
                 <div class="divider"></div>
                 <div class="services">
-                  <div class="frontend">
+                  <div class="frontend hiddenServices">
                     <img src="./frontend.png" alt="" height="80px" width="80px">
                     <p>Frontend Development</p>
                   </div>
-                  <div class="backend">
+                  <div class="backend hiddenServices">
                     <img src="./backend.png" alt="" height="80px" width="80px" >
                     <p>Backend Development</p>
                   </div>
-                  <div class="web-security">
+                  <div class="web-security hiddenServices">
                     <img src="./security.png" alt="" height="80px" width="80px" >
                     <p>Web Security</p>
                   </div>
@@ -46,7 +51,7 @@
               </div>
             </div>
             <div class="right">
-              <div class="name-mode">
+              <div class="name-mode hiddenRight">
                 <div class="name-icon">
                   <img src="./developer.svg" alt="" height="60px" width="60px">
                   <p>Jerome <span>Bercero</span></p>
@@ -54,22 +59,22 @@
                   <i class="fa-solid fa-moon"></i>
               </div>
               <div class="information">
-                <div class="picture">
+                <div class="picture hiddenPictureContainer">
                   GRAD PIC :(
                 </div>
                 <div class="details">
-                  <div class="name">
+                  <div class="name hiddenRight">
                     <p>Name: </p>
                     <p>Jerome Esguerra Bercero</p>
                   </div>
-                  <div class="location">
+                  <div class="location hiddenRight">
                     <div class="location-title">
                       <p>Location: </p>
                       <p>Rodriguez (Montalban) Rizal</p>
                     </div>
                     <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d30866.415581139343!2d121.11780163476567!3d14.752011!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTTCsDQ1JzA3LjIiTiAxMjHCsDA4JzE4LjIiRQ!5e0!3m2!1sen!2sph!4v1720525666992!5m2!1sen!2sph" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                   </div>
-                  <div class="links">
+                  <div class="links hiddenRight">
                     <p>Links: </p>
                     <div class="link-icons">
                       <a href="https://github.com/Sant1nooooo" target="_blank">
@@ -88,7 +93,7 @@
             </div>
           </div>
           <div class="bottom">
-            <div class="recent-projects">
+            <div class="recent-projects hiddenBottomLeft"> 
               <div class="projects-title">
                 <p>Recent Projects</p>
                 <p>See All</p>
@@ -107,7 +112,7 @@
                 </div>
               </div>
             </div>
-            <div class="about">
+            <div class="about hiddebBottomRight">
               <p>About</p>
               <p>I am Jerome Bercero, an aspiring Software Developer passionate about both Web Development and Mobile App Development
                 with experience in creating responsive web applications and proficiency in HTML, CSS, React, 
@@ -120,37 +125,42 @@
           <div class="gray-line"></div>
         </div>
       </div>
+
+      <!-- Personal Details Section -->
       <div class="personal-details-section">
         <div class="container">
           <div class="details">
-            <p class="details-title">Personal Details</p>
+            <p class="details-title hiddenPersonalAnimation">Personal Details</p>
             <div class="details-divider"></div>
 
-            <p class="details-paragraph">I am once a student with passion in <span>Web Development</span> and <span>Mobile App development</span>, 
+            <p class="details-paragraph hiddenPersonalAnimation">I am once a student with passion in <span>Web Development</span> and <span>Mobile App development</span>, 
               experienced increating innovative software solutions by implementing responsive web applications by making use of different frontend web technologies 
               such as HTML, CSS, JavaScript, ReactJS, NextJS and other JavaScript libraries and frameworks. And utilizing built-in 
               UI components from different UI libraries that has comprehensive and wide-rangeof UI tools.
             </p>
             <br>
             <br>
-            <p class="details-paragraph">
+            <p class="details-paragraph hiddenPersonalAnimation">
               I am committed in learning the current trends in software to improve and enhance my programming skills particularly in software development 
               and want to develop innovative software solutions as results of my passion and extending my knowledge to backend web development using C# and ASP.NET Core as I tend to use Microsoft 
               technologies.
             </p>
           </div>
-          <div class="image-container">
+          <div class="image-container hiddenImage">
+            <!-- asd -->
           </div>
         </div>
       </div>
+
+      <!-- Skills Section -->
       <div class="skills-section">
         <div class="container">
           <p class="skills-title">My Skills</p>
-          <div class="skills-divider"></div>
-          <p class="skills-description">I have acquired knowledge in various technology stacks during my studies in Front-End development. 
+          <div class="skills-divider hiddenSkillsDivider"></div>
+          <p class="skills-description hiddenSkillsDescription">I have acquired knowledge in various technology stacks during my studies in Front-End development. 
             Currently, I am focusing on mastering the ReactJS framework, which will greatly enhance my skills in 
             creating compelling user interfaces and improving user experience.</p>
-            <div class="skills-container">
+            <div class="skills-container hiddenSkillsContainer">
               <p class="tools-title">Frontend Development</p>
               <div class="tools-container">
                 <div class="skill"  name="html">
@@ -323,8 +333,81 @@
             </div>
         </div>
       </div>
+
+      <!-- Projects Section -->
+       <div class="projects-section">
+        <div class="container">
+          <p class="container-title">My Projects</p>
+          <div class="container-divider"></div>
+          <p class="container-description">Presented here are collections of both my academic and personal projects, which have been meticulously constructed utilizing the acquired skills obtained throughout my <br>educational journey.</p>
+          <div class="projects-container">
+            <p class="project-title">RNDMZR</p>
+            <div class="top-container">
+              <div class="details">
+                <p class="details-title">Randomizer</p>
+                <p class="details-description">
+                  Netflix Clone, where I blend ReactJS, TypeScript, and Tailwind to recreate the iconic Netflix experience. 
+                  This project highlights my journey in mastering modern web technologies and elevating my development skills.
+                </p>
+                <div class="tools-container">
+                  <p class="tools-title"> Tools Used</p>
+                  <div class="tools-icon">
+                    <img src="" alt="" height="20px" width="20px">
+                    <img src="" alt="" height="20px" width="20px">
+                    <img src="" alt="" height="20px" width="20px">
+                    <img src="" alt="" height="20px" width="20px">
+                    <img src="" alt="" height="20px" width="20px">
+                    <img src="" alt="" height="20px" width="20px">
+                    <img src="" alt="" height="20px" width="20px">
+                    <img src="" alt="" height="20px" width="20px">
+                    <img src="" alt="" height="20px" width="20px">
+                    <img src="" alt="" height="20px" width="20px">
+                    <img src="" alt="" height="20px" width="20px">
+                    <img src="" alt="" height="20px" width="20px">
+                  </div>
+                </div>
+                <div class="action-buttons">
+                  <div class="button">
+                    <img src="./case-study.png" alt="" height="32px" width="32px">
+                    <p>Case Study</p>
+                  </div>
+                  <div class="button">
+                    <img src="./demo.png" alt="" height="32px" width="32px">
+                    <p>Demo</p>
+                  </div>
+                </div>
+              </div>
+              <div class="video">
+                <img src="./nike-gif.gif" alt="">
+                <div class="video-background"></div>
+              </div>
+            </div>
+            <div class="bottom-container">
+              <p class="bottom-title">Projects</p>
+              <div class="card-container">
+                <div class="card">
+                  <p>1</p>
+                  <img src="./randomizer-dashboard.png" alt="" height="175px" width="250px">
+                </div>
+                <div class="card">
+                  <p>2</p>
+                  <img src="./nike-home-1.png" alt="" height="175px" width="250px">
+                </div>
+                <div class="card">
+                  <p>3</p>
+                  <img src="./data-analytics.png" alt="" height="175px" width="250px">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+       </div>
     </div>
   </body>
   <script src="./projects.js"></script>
   <script src="./skills.js"></script>
+  <script src="./transition.js"></script>
+  <script src="./projects-section.js"></script>
+  <script src="./intro-animation.js"></script>
+  <script src="./carousel.js"></script>
 </html>
