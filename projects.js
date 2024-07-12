@@ -28,12 +28,11 @@ randomizerElement.addEventListener('mouseleave', stopInterval);
 
 // = = = = = NIKE VIDEO AUTOPLAY LOGIC = = = = =
 
-const video = document.getElementById('hoverVideo');
-video.addEventListener('mouseenter', function() {
-    video.play();
-});
-
-video.addEventListener('mouseleave', function() {
-    video.pause();
-    video.currentTime = 0;
-});
+const nikeImage = document.querySelector('.nike-image');
+const nikeContainer = document.querySelector('.nike');
+nikeContainer.addEventListener('mouseenter', ()=>{
+  nikeImage.src = './nike-gif.gif'
+})
+nikeContainer.addEventListener('mouseleave', ()=>{
+  nikeImage.src = './nike-home-1.png'
+})

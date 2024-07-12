@@ -312,17 +312,16 @@
 .site-wrapper .intro-section .container .bottom .recent-projects .projects .project-img{
   cursor: pointer;
   width: 32%;
-  height: 205px;
+  height: 180px;
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: .5rem;
   opacity: 0.9;
   box-shadow: #1d78f066 5px 5px;
-  transition: 0.3s;
   position: relative;
 }
-.site-wrapper .intro-section .container .bottom .recent-projects .projects .project-img img{
+.site-wrapper .intro-section .container .bottom .recent-projects .projects .project-img .play-button{
   position: absolute;
   height: 70px;
   width: 70px;
@@ -332,7 +331,7 @@
   transform: scale(0.99);
   box-shadow: #1d78f066 5px 5px, #1d78f04d 10px 10px, #1d78f033 15px 15px;
 }
-.site-wrapper .intro-section .container .bottom .recent-projects .projects .project-img:hover img{
+.site-wrapper .intro-section .container .bottom .recent-projects .projects .project-img:hover .play-button{
   display: none;
 }
 .site-wrapper .intro-section .container .bottom .recent-projects .projects .randomizer{
