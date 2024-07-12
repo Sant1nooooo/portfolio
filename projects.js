@@ -1,29 +1,15 @@
 
 
 // = = = = = RANDOMIZER IMAGE LOGIC = = = = =
-const randomizerImages = [
-  './randomizer-login.png',
-  './randomizer-dashboard.png',
-  './randomizer-settings.png',
-  './randomizer-winners.png',
-]
-let index = 0;
-const randomizerElement = document.querySelector('.randomizer');
-let intervalId;
-function startInterval() {
-  intervalId = setInterval(() => {
-    if(index == randomizerImages.length) { index = 0;}
-    randomizerElement.style.backgroundImage = `url(${randomizerImages[index]})`;
-    index++
-  }, 500);
-}
-function stopInterval() {
-  clearInterval(intervalId);
-  randomizerElement.style.backgroundImage = `url(${randomizerImages[1]})`;
-}
 
-randomizerElement.addEventListener('mouseenter', startInterval);
-randomizerElement.addEventListener('mouseleave', stopInterval);
+const randomizerImage = document.querySelector('.randomizer-image');
+const randomizerContainer = document.querySelector('.randomizer');
+randomizerContainer.addEventListener('mouseenter', ()=>{
+  randomizerImage.src = './randomizer-gif.gif'
+})
+randomizerContainer.addEventListener('mouseleave', ()=>{
+  randomizerImage.src = './randomizer-dashboard.png'
+})
 
 
 // = = = = = NIKE VIDEO AUTOPLAY LOGIC = = = = =

@@ -331,9 +331,6 @@
   transform: scale(0.99);
   box-shadow: #1d78f066 5px 5px, #1d78f04d 10px 10px, #1d78f033 15px 15px;
 }
-.site-wrapper .intro-section .container .bottom .recent-projects .projects .project-img:hover .play-button{
-  display: none;
-}
 .site-wrapper .intro-section .container .bottom .recent-projects .projects .randomizer{
   background-image: url('./randomizer-dashboard.png');
   background-position: center;
