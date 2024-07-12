@@ -299,20 +299,11 @@
   align-items: center;
   justify-content: space-between;
 }
-.site-wrapper .intro-section .container .bottom .recent-projects .projects-title p:first-child{
+.site-wrapper .intro-section .container .bottom .recent-projects .projects-title p{
   font-size: 30px;
   font-weight: 700;
 }
-.site-wrapper .intro-section .container .bottom .recent-projects .projects-title p:last-child{
-  font-size: 25px;
-  font-weight: 700;
-  color: #8b898c;
-  cursor: pointer;
-  font-weight: 500;
-}
-.site-wrapper .intro-section .container .bottom .recent-projects .projects-title p:last-child:hover{
-  text-decoration: underline;
-}
+
 .site-wrapper .intro-section .container .bottom .recent-projects .projects{
   display: flex;
   align-items: center;
