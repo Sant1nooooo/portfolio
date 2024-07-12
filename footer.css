@@ -1,0 +1,10 @@
+.footer{
+  background-color: black;
+  width: 100%;
+  height: 150px;
+}
+.footer .footer-divider{
+  height: 3px;
+  width: 100%;
+  background-color: #436be1
+}

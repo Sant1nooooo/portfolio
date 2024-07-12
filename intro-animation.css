@@ -2,7 +2,7 @@
 .hiddenQuoteContainer{
   opacity: 0.5;
   filter: blur(5px);
-  transform: translateX(-100px);
+  transform: translateX(-200px);
   transition: all 0.5s ease-in
 }
 .animationQuoteContainer{
@@ -14,7 +14,7 @@
 .hiddenServiceTitle{
   opacity: 0.5;
   filter: blur(5px);
-  transform: translateX(-100px);
+  transform: translateX(-200px);
   transition: all 0.5s ease-in;
   transition-delay: 100ms;
 }
@@ -36,7 +36,7 @@
 .hiddenRight{
   opacity: 0.5;
   filter: blur(5px);
-  transform: translateX(100px);
+  transform: translateX(200px);
   transition: all 0.5s ease-in
 }
 .animationRight{

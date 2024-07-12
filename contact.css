@@ -1,0 +1,157 @@
+.site-wrapper .contact-section{
+  color: white;
+  padding: 3rem 4rem;
+}
+
+.site-wrapper .contact-section .container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  /* background-color: orange; */
+}
+.site-wrapper .contact-section .container .contact-title{
+  font-size: 32px;
+  font-weight: 700;
+}
+.site-wrapper .contact-section .container .contact-divider
+{
+  height: 5px;
+  width: 65px;
+  background: #436be2;
+  margin: 15px 0px 25px 0px;
+
+}
+
+.site-wrapper .contact-section .container .contact-form {
+  display: flex;
+  /* background-color: pink; */
+  align-items: center;
+  justify-content: space-between;
+  width: 70%;
+}
+
+.site-wrapper .contact-section .container .contact-form .left-container {
+  /* max-width: 500px; */
+  /* margin: 0px 200px 0px 0px; */
+  /* background-color: pink; */
+  width:60%
+
+}
+.site-wrapper .contact-section .container .contact-form .left-container .left-title{
+  font-size: 27px;
+  font-weight: 600;
+  margin: 0px 0px 20px;
+  color: white;
+  /* text-align: center; */
+}
+.site-wrapper .contact-section .container .contact-form .left-container .left-description{
+  font-size: 16px;
+  color: #d7d7d7;
+  margin: 0px 0px 30px;
+}
+.site-wrapper .contact-section .container .contact-form .left-container .left-description{}
+
+.site-wrapper .contact-section .container .contact-form .right-container{
+  width:40%;
+}
+.site-wrapper .contact-section .container .contact-form .right-container form{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  flex-direction: column;
+  /* background-color: pink; */
+}
+.site-wrapper .contact-section .container .contact-form .right-container form input{
+  width: 100%;
+  padding: .75rem 1rem;
+  font-size: 1rem;
+  border-radius: .3125rem;
+  border: 1px solid #656565;
+  background: transparent;
+  outline-color: #436be2;
+  color: #c8c8c8;
+  margin-bottom: 1.75rem;
+  background: transparent;
+  
+}
+.site-wrapper .contact-section .container .contact-form .right-container form input:focus{
+  outline: none;
+}
+.site-wrapper .contact-section .container .contact-form .right-container form textarea{
+  width:100%;
+  height: 7rem;
+  padding: .75rem 1rem;
+  font-size: 1rem;
+  border-radius: .3125rem;
+  border: 1px solid #656565;
+  background: transparent;
+  outline-color: #436be2;
+  color: #c8c8c8;
+  resize: none;
+  margin-bottom: 1.75rem;
+}
+.site-wrapper .contact-section .container .contact-form .right-container form button{
+  margin-left: auto;
+  width: 12rem;
+  font-size: 1rem;
+  background: #436BE2;
+  color: #fff;
+  padding: .7em 1em;
+  padding-top: 0.7em;
+  padding-right: 1em;
+  padding-bottom: 0.7em;
+  padding-left: 1em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: .3125rem;
+  cursor: pointer;
+  transition: .1s;
+  margin: 0px auto;
+}
+.site-wrapper .contact-section .container .contact-form .right-container form button:hover{
+  /* background-color: #5878db; */
+  opacity: 0.7
+}
+.site-wrapper .contact-section .container .contact-form .right-container form button svg{
+  margin: 0px 10px 0px 0px;
+}
+
+@media(max-width: 1300px){
+  
+  .site-wrapper .contact-section .container .contact-form{
+    width: 100%;
+  }
+}
+@media(max-width: 900px)
+{
+  .site-wrapper .contact-section .container .contact-form{
+    flex-direction: column-reverse;
+  }
+  .site-wrapper .contact-section .container .contact-form .left-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: column;
+  }
+  .site-wrapper .contact-section .container .contact-form .right-container{
+    width: 100%;
+    margin: 0px 0px 50px 0px;
+  }
+  .site-wrapper .contact-section .container .contact-form .left-container .left-description{
+    text-align: center;
+  }
+  .site-wrapper .contact-section .container .contact-form .left-container .left-title{
+    text-align: center;
+  }
+}
+@media(max-width: 600px){
+  .site-wrapper .contact-section{
+    padding: 0px 0px 0px 0px;
+  }
+}

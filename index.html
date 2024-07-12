@@ -3,14 +3,19 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link rel="stylesheet" href="intro-section.css">
     <link rel="stylesheet" href="./personal-details.css">
     <link rel="stylesheet" href="./skills-section.css">
     <link rel="stylesheet" href="./animation.css">
     <link rel="stylesheet" href="./projects-section.css">
     <link rel="stylesheet" href="./intro-animation.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./overlay.css">
+    <link rel="stylesheet" href="./contact.css">
+    <link rel="stylesheet" href="./footer.css">
+    <link rel="stylesheet" href="./projects-animation.css">
     <title>Jerome Esguerra Bercero</title>
     <script src="./index.js"></script>
     <!-- <script src="./projects.js"></script> -->
@@ -60,7 +65,7 @@
               </div>
               <div class="information">
                 <div class="picture hiddenPictureContainer">
-                  GRAD PIC :(
+                  GRAD PIC <i class="fa-regular fa-face-frown" style="margin: 0px 0px 0px 10px;"></i>
                 </div>
                 <div class="details">
                   <div class="name hiddenRight">
@@ -80,10 +85,10 @@
                       <a href="https://github.com/Sant1nooooo" target="_blank">
                         <i class="fa-brands fa-github"></i>
                       </a>
-                      <a href="https://github.com/Sant1nooooo" target="_blank">
+                      <a href="https://www.linkedin.com/in/jerome-bercero-aa0b86278/" target="_blank">
                         <i class="fa-brands fa-linkedin"></i>
                       </a>
-                      <a href="https://www.linkedin.com/in/jerome-bercero-aa0b86278/" target="_blank">
+                      <a href="https://www.facebook.com/Jerowme/" target="_blank">
                         <i class="fa-brands fa-facebook"></i>
                       </a>
                     </div>
@@ -147,7 +152,7 @@
             </p>
           </div>
           <div class="image-container hiddenImage">
-            <!-- asd -->
+            <img src="./developer.svg" alt="" height="100%" width="100%">
           </div>
         </div>
       </div>
@@ -157,9 +162,7 @@
         <div class="container">
           <p class="skills-title">My Skills</p>
           <div class="skills-divider hiddenSkillsDivider"></div>
-          <p class="skills-description hiddenSkillsDescription">I have acquired knowledge in various technology stacks during my studies in Front-End development. 
-            Currently, I am focusing on mastering the ReactJS framework, which will greatly enhance my skills in 
-            creating compelling user interfaces and improving user experience.</p>
+          <p class="skills-description hiddenSkillsDescription">My expertise lies in crafting web applications. I primarily focused on using React and other JavaScript libraries for the frontend, while confidently handling backend development and database management.</p>
             <div class="skills-container hiddenSkillsContainer">
               <p class="tools-title">Frontend Development</p>
               <div class="tools-container">
@@ -255,6 +258,34 @@
                   </div>
                 </div>
               </div>
+              <p class="tools-title">Backend Development</p>
+              <div class="tools-container">
+                <div class="skill" name="postgresql">
+                  <div class="skill-image">
+                    <img src="./postgresql.svg" alt="" height="30px" width="30px">
+                  </div>
+                  <div class="skill-name">
+                    <p>PostgreSQL</p>
+                  </div>
+                </div>
+                <div class="skill" name="mysql">
+                  <div class="skill-image">
+                    <img src="./mysql.svg" alt="" height="30px" width="30px">
+                  </div>
+                  <div class="skill-name">
+                    <p>MySQL</p>
+                  </div>
+                </div>
+                <div class="skill" name="prisma">
+                  <div class="skill-image">
+                    <img src="./prisma.svg" alt="" height="30px" width="30px">
+                  </div>
+                  <div class="skill-name">
+                    <p>Prisma</p>
+                  </div>
+                </div>
+
+              </div>
               <p class="tools-title">Others</p>
               <div class="tools-container">
                 <div class="skill" name="git">
@@ -287,6 +318,14 @@
                   </div>
                   <div class="skill-name">
                     <p>React-Router</p>
+                  </div>
+                </div>
+                <div class="skill" name="vercel">
+                  <div class="skill-image">
+                    <img src="./vercel.svg" alt="" height="30px" width="30px">
+                  </div>
+                  <div class="skill-name">
+                    <p>Vercel</p>
                   </div>
                 </div>
                 <div class="skill" name="ant-design">
@@ -335,65 +374,59 @@
       </div>
 
       <!-- Projects Section -->
-       <div class="projects-section">
+      <div class="projects-section hiddenProjectContainer">
         <div class="container">
           <p class="container-title">My Projects</p>
-          <div class="container-divider"></div>
+          <div class="container-divider hiddenProjectContainer"></div>
           <p class="container-description">Presented here are collections of both my academic and personal projects, which have been meticulously constructed utilizing the acquired skills obtained throughout my <br>educational journey.</p>
           <div class="projects-container">
             <p class="project-title">RNDMZR</p>
             <div class="top-container">
               <div class="details">
-                <p class="details-title">Randomizer</p>
+                <p class="top-container-title">Randomizer</p>
                 <p class="details-description">
-                  Netflix Clone, where I blend ReactJS, TypeScript, and Tailwind to recreate the iconic Netflix experience. 
-                  This project highlights my journey in mastering modern web technologies and elevating my development skills.
+                  This is a in-house project of the company, it is a raffle website provides an engaging 
+                  platform dedicated to customer raffles. Users can create accounts and manage raffles 
+                  effortlessly, making it simple to administer and participate in raffle events.
                 </p>
                 <div class="tools-container">
                   <p class="tools-title"> Tools Used</p>
                   <div class="tools-icon">
-                    <img src="" alt="" height="20px" width="20px">
-                    <img src="" alt="" height="20px" width="20px">
-                    <img src="" alt="" height="20px" width="20px">
-                    <img src="" alt="" height="20px" width="20px">
-                    <img src="" alt="" height="20px" width="20px">
-                    <img src="" alt="" height="20px" width="20px">
-                    <img src="" alt="" height="20px" width="20px">
-                    <img src="" alt="" height="20px" width="20px">
-                    <img src="" alt="" height="20px" width="20px">
-                    <img src="" alt="" height="20px" width="20px">
-                    <img src="" alt="" height="20px" width="20px">
-                    <img src="" alt="" height="20px" width="20px">
+                    <!-- <div class="img-container"></div> -->
                   </div>
                 </div>
                 <div class="action-buttons">
-                  <div class="button">
-                    <img src="./case-study.png" alt="" height="32px" width="32px">
+                  <div class="button case-study-button" name="Randomizer">
+                    <!-- <img src="./case-study.png" alt="" height="32px" width="32px"> -->
+                    <i class="fa-solid fa-file-lines" style="font-size: 20px; margin: 0px 10px 0px 0px"></i>
                     <p>Case Study</p>
                   </div>
-                  <div class="button">
-                    <img src="./demo.png" alt="" height="32px" width="32px">
-                    <p>Demo</p>
-                  </div>
+                  <a href="https://nike-minimalist-ecommerce.netlify.app/home" target="_blank">
+                    <div class="button demo-button">
+                      <!-- <img src="./demo.png" alt="" height="32px" width="32px"> -->
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"></path><path fill="currentColor" d="M5 13c0-5.088 2.903-9.436 7-11.182C16.097 3.564 19 7.912 19 13c0 .823-.076 1.626-.22 2.403l1.94 1.832a.5.5 0 0 1 .095.603l-2.495 4.575a.5.5 0 0 1-.793.114l-2.234-2.234a1 1 0 0 0-.707-.293H9.414a1 1 0 0 0-.707.293l-2.234 2.234a.5.5 0 0 1-.793-.114l-2.495-4.575a.5.5 0 0 1 .095-.603l1.94-1.832C5.077 14.626 5 13.823 5 13zm1.476 6.696l.817-.817A3 3 0 0 1 9.414 18h5.172a3 3 0 0 1 2.121.879l.817.817.982-1.8-1.1-1.04a2 2 0 0 1-.593-1.82c.124-.664.187-1.345.187-2.036 0-3.87-1.995-7.3-5-8.96C8.995 5.7 7 9.13 7 13c0 .691.063 1.372.187 2.037a2 2 0 0 1-.593 1.82l-1.1 1.039.982 1.8zM12 13a2 2 0 1 1 0-4 2 2 0 0 1 0 4z"></path></svg>
+                      <p>DEMO</p>
+                    </div>
+                  </a>
                 </div>
               </div>
               <div class="video">
-                <img src="./nike-gif.gif" alt="">
+                  <img class='video-container' src="./randomizer-gif.gif" alt="">
                 <div class="video-background"></div>
               </div>
             </div>
             <div class="bottom-container">
               <p class="bottom-title">Projects</p>
               <div class="card-container">
-                <div class="card">
+                <div class="card" name="Randomizer">
                   <p>1</p>
                   <img src="./randomizer-dashboard.png" alt="" height="175px" width="250px">
                 </div>
-                <div class="card">
+                <div class="card" name="Minimalist e-Commerce">
                   <p>2</p>
                   <img src="./nike-home-1.png" alt="" height="175px" width="250px">
                 </div>
-                <div class="card">
+                <div class="card" name="Mobile Grammar Correction">
                   <p>3</p>
                   <img src="./data-analytics.png" alt="" height="175px" width="250px">
                 </div>
@@ -401,7 +434,50 @@
             </div>
           </div>
         </div>
+      </div>
+      
+      <!-- Contact Section -->
+       <div class="contact-section">
+        <div class="container">
+          <p class="contact-title">Contact</p>
+          <div class="contact-divider"></div>
+          
+          <div class="contact-form">
+            <div class="left-container">
+              <p class="left-title">Feel free to contact me anytime!</p>
+              <p class="left-description">Your message will be sent directly to my email. <i class="fa-regular fa-face-smile" style="font-size: 20px;"></i><br><br>And I'll get back within 24 hours.</p>
+              <img src="./contact-me.svg" alt="" height="300" width="300">
+            </div>
+            <div class="right-container">
+              <form action="https://formspree.io/f/xzzpzdnp" method="POST">
+                <input type="text" name="name" placeholder="Enter your name" required>
+                <input type="text" name="email" placeholder="Enter your email address" required>
+                <input type="text" name="subject" placeholder="Enter your subject (Optional)" >
+                <textarea id="message" rows="10" cols="60" name="message" required placeholder="Enter your message"></textarea>
+                <button type="submt">
+                  <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"></path><path d="M1.946 9.315c-.522-.174-.527-.455.01-.634l19.087-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.455.547-.679.045L12 14l6-8-8 6-8.054-2.685z" fill="currentColor"></path></svg>
+                  Send Message
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
        </div>
+      <div class="overlay">
+        <div class="case-study">
+          <div class="fa-xmark-container">
+            <i class="fa-solid fa-xmark"></i>
+          </div>
+          <p class="case-study-title"> Randomizer </p>
+          <div class="case-study-content">
+            <p class="case-study-description">
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="footer-divider"></div>
     </div>
   </body>
   <script src="./projects.js"></script>
@@ -409,5 +485,8 @@
   <script src="./transition.js"></script>
   <script src="./projects-section.js"></script>
   <script src="./intro-animation.js"></script>
-  <script src="./carousel.js"></script>
+  <script src="./project-list.js"></script>
+  <script src="./overlay.js"></script>
+  <script src="./projects-animation.js"></script>
 </html>
+

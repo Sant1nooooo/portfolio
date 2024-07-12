@@ -116,7 +116,6 @@
   flex-direction: column;
   font-size: 16px;
   font-weight: 700;
-  cursor: pointer;
   height: 160px;
 }
 .site-wrapper .intro-section .container .top .left .services .info-icon{
@@ -519,15 +518,12 @@
 }
 @media (max-width: 600px)
 {
+  .site-wrapper .intro-section{ 
+    width: 100%;
+    padding: 0px 0px 0px 0px;
+  }
   .site-wrapper .intro-section .container .bottom .recent-projects .projects .project-img{
     width: 100%;
   }
 }
 
-@media (max-width: 500px)
-{
-  .site-wrapper .intro-section{ 
-    width: 100%;
-    padding: 32px 0px 0px 0px;
-  }
-}

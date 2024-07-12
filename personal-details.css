@@ -79,7 +79,7 @@
     text-align: center;
   }
 }
-@media (max-width: 500px)
+@media (max-width: 600px)
 {
   .personal-details-section{
     padding: 0px;
