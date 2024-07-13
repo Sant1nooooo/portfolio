@@ -2,7 +2,7 @@
   opacity: 0;
   filter: blur(5px);
   transform: translateX(100px);
-  transition: all 0.5s ease-in
+  transition: all 1s;
 }
 .animationProjectContainer{
   opacity: 1;
