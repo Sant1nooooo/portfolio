@@ -196,6 +196,7 @@
   background-color: #1e1b1e;
   margin-right: 20px;
   box-shadow: 0 4px 4px #00000040;
+  overflow: hidden;
 }
 .site-wrapper .intro-section .container .top .right .information .details
 {
