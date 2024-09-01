@@ -437,7 +437,7 @@
   .site-wrapper .intro-section .container .top .quote .never-give-up{
     font-size: 30px;
   }
-  .site-wrapper .intro-section .container .top .quote .download-cv{
+  .site-wrapper .intro-section .container .top .quote  a{
     position: static;
   }
   .site-wrapper .intro-section .container .bottom .recent-projects .projects .project-img{
