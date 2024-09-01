@@ -51,14 +51,17 @@
   font-weight: 700;
   
 }
+.site-wrapper .intro-section .container .top .quote a{
+  position: absolute;
+  bottom: 30px;
+  text-decoration: none;
+}
 .site-wrapper .intro-section .container .top .quote .download-cv{
   background-color: #436BE2;
   /* padding:15px 20px; */
   height: 60px;
   width: 200px;
   border-radius: 0.5rem;
-  position: absolute;
-  bottom: 30px;
   display: flex;
   align-items: center;
   justify-content: start;
@@ -75,7 +78,7 @@
   align-items: center;
   justify-content: center;
 }
-.site-wrapper .intro-section .container .top .quote .download-cv a{
+.site-wrapper .intro-section .container .top .quote .download-cv p{
   font-size: 15px;
   color: white;
   text-decoration: none;
