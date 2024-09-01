@@ -9,25 +9,21 @@ const images=[
   { name: 'c-sharp', imageURL: './c-sharp.svg', position: 'bottom right'},
   { name: 'asp-net', imageURL: './asp-net-core.svg', position: 'bottom left'},
 
-  { name: 'python', imageURL:'./python.svg', position: 'top left'},
-  { name: 'flask', imageURL: './flask.svg', position: 'top right'},
-  { name: 'rest', imageURL:'./rest-api.svg', position: 'bottom right'},
-  { name: 'postgresql', imageURL:'./postgresql.svg', position: 'bottom left'},
 
-  { name: 'mysql', imageURL:'./mysql.svg', position: 'top left'},
-  { name: 'prisma', imageURL:'./prisma.svg', position: 'top right'},
-  { name: 'git', imageURL: './git.svg', position: 'bottom right'},
-  { name: 'github', imageURL: './github.svg', position: 'bottom left'},
-
-  { name: 'redux', imageURL: './redux.svg', position: 'top left'},
-  { name: 'react-router', imageURL: './react-router.svg', position: 'top right'},
-  { name: 'ant-design', imageURL: './ant-design.svg', position: 'bottom right'},
-  { name: 'postman', imageURL: './postman.svg', position: 'bottom left'},
-
-  { name: 'material', imageURL: './mui.svg', position: 'top left'},
+  { name: 'rest', imageURL:'./rest-api.svg', position: 'top left'},
+  { name: 'postgresql', imageURL:'./postgresql.svg', position: 'top right'},
+  { name: 'mssql', imageURL:'./mssql.svg', position: 'bottom right'},
+  { name: 'prisma', imageURL:'./prisma.svg', position: 'bottom left'},
+  
+  { name: 'git', imageURL: './git.svg', position: 'top left'},
+  { name: 'github', imageURL: './github.svg', position: 'top right'},
+  { name: 'redux', imageURL: './redux.svg', position: 'bottom right'},
+  { name: 'react-router', imageURL: './react-router.svg', position: 'bottom left'},
+  
+  { name: 'swagger', imageURL: './swagger.svg', position: 'top left'},
   { name: 'jest', imageURL: './jest.svg', position: 'top right'}, 
   { name: 'redux-devtools', imageURL: './redux-devtools.svg', position: 'bottom right'},
-  { name: 'vercel', imageURL: './vercel.svg', position: 'bottom left'},
+  { name: 'vercel', imageURL: './vercel.svg', position: 'botton left'},
 ];
 const skillList = document.querySelectorAll('.skill');
 const skillContainer = document.querySelector('.skills-container');
