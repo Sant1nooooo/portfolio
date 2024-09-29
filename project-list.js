@@ -19,8 +19,8 @@ const projects = [
   { title: 'e-CMMRCE',
     name: 'Minimalist e-Commerce',
     video: './nike-gif.gif',
-    description: `The 'Nike Minimalist' eCommerce project is a robust web application that integrates HTML, CSS, JavaScript, Python, Flask, and MySQL technologies to deliver a seamless user experience. Customers can register, log in, and navigate through a variety of Nike products. They can add items to their cart, mark favorites, and proceed to checkout, where transactions are securely processed and stored in a MySQL database.`,
-    tools: ['./html.svg', './css.svg', './javascript.svg', './python.svg','./flask.svg','./mysql.svg'],
+    description: `The 'Nike Minimalist' eCommerce project is a robust web application that integrates HTML, CSS, JavaScript, React, C#, .NET Core, ASP.NET WebAPI to create this responsive, visually appealing, and innovative web application. Customers can register, log in, and navigate through a variety of Nike products. They can add items to their cart, mark favorites, and proceed to checkout, where transactions are securely processed and stored in a MS SQL database and managed using Entity Framework Core.`,
+    tools: ['./html.svg', './css.svg', './javascript.svg', '/react.svg', '/react-router.svg','/redux.svg','./c-sharp.svg','./asp-net-core.svg','./mssql.svg'],
     hasDemo: true
   },
   { title: 'THESIS',
@@ -54,8 +54,7 @@ function createImages(eachTool){
   const imageElement = document.createElement('img');
   imageElement.src = eachTool;
 
-
-  imageElement.classList.add('tool-img')
+  imageElement.classList.add('tool-img');
   imgContainer.classList.add('img-container');
   imgContainer.append(imageElement);
   toolsIconContainer.append(imgContainer)
@@ -67,10 +66,15 @@ function handleShowProject(event, eachProject){
   {
     let projectObject = projects.find(project => project.name === currentProject);
     let existingTools = document.querySelectorAll('.img-container');
+    console.log(currentProject);
     
     //Changing the text
     projectTitle.innerHTML = `${projectObject.title}`;
     detailsTitle.innerHTML = `${projectObject.name}`;
+    if(currentProject == `Minimalist e-Commerce`)
+    {
+      detailsTitle.innerHTML = `${projectObject.name} (under development)`;
+    }
     detailsDescription.innerHTML = `${projectObject.description}`;
     videoContainer.src = `${projectObject.video}`
 
@@ -79,7 +83,7 @@ function handleShowProject(event, eachProject){
 
     //Removing the existing tools or images before appending or putting the new ones.
     existingTools.forEach(eachExistingTool => { toolsIconContainer.removeChild(eachExistingTool) });
-    projectObject.tools.forEach(eachTool => { createImages(eachTool)});
+    projectObject.tools.forEach(eachTool => { createImages(eachTool) });
 
     if(projectObject.hasDemo)
     {
