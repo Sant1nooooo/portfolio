@@ -19,7 +19,7 @@ const projects = [
   { title: 'e-CMMRCE',
     name: 'Minimalist e-Commerce',
     video: './nike-gif.gif',
-    description: `The 'Nike Minimalist' eCommerce project is a robust web application that integrates HTML, CSS, JavaScript, React, C#, .NET Core, ASP.NET WebAPI to create this responsive, visually appealing, and innovative web application. Customers can register, log in, and navigate through a variety of Nike products. They can add items to their cart, mark favorites, and proceed to checkout, where transactions are securely processed and stored in a MS SQL database and managed using Entity Framework Core.`,
+    description: `The 'Nike Minimalist' eCommerce project is a robust web application that integrates HTML, CSS, JavaScript, React, C#, .NET Core, ASP.NET WebAPI to create this responsive, visually appealing, and innovative web application. Customers can register, log in, and navigate through a variety of Nike products.This project incorporates several design patterns to enhance its architecture and functionality. I implemented CQRS for separating command and query operations, ensuring a clear separation of concerns. Additionally, I utilized MediatR to handle API requests efficiently through mediator requests and handlers, Fluent Validation to validate API request inputs, and JWT for secure authentication and authorization in HTTP requests.`,
     tools: ['./html.svg', './css.svg', './javascript.svg', '/react.svg', '/react-router.svg','/redux.svg','./c-sharp.svg','./asp-net-core.svg','./mssql.svg'],
     hasDemo: true
   },

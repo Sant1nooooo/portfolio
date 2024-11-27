@@ -11,9 +11,9 @@ const images=[
 
 
   { name: 'rest', imageURL:'./rest-api.svg', position: 'top left'},
-  { name: 'postgresql', imageURL:'./postgresql.svg', position: 'top right'},
+  { name: 'postgresql', imageURL:'./postgresql.svg', position: 'top right'},//
   { name: 'mssql', imageURL:'./mssql.svg', position: 'bottom right'},
-  { name: 'prisma', imageURL:'./prisma.svg', position: 'bottom left'},
+  { name: 'prisma', imageURL:'./prisma.svg', position: 'bottom left'},//
   
   { name: 'git', imageURL: './git.svg', position: 'top left'},
   { name: 'github', imageURL: './github.svg', position: 'top right'},
